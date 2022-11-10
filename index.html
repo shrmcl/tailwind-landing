@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Landing Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body>
+        <header class="px-6 pt-6">
+            <nav class="flex h-9 items-center justify-between">
+                <div class="flex">
+                    <a href="#">
+                        <img 
+                            src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/325/party-popper_1f389.png" 
+                            alt="party hat & confetti emoji"
+                            class="h-8 hover:animate-spin"
+                        />
+                    </a>
+                </div>
+                <!-- hide when screen is less than medium. flex when at least medium. -->
+                <div class="hidden md:flex gap-x-6">
+                    <a href="#" class="font-semibold text-gray-900 hover:text-gray-700 hover:underline underline-offset-4">
+                        Products
+                    </a>
+                    <a href="#" class="font-semibold text-gray-900 hover:text-gray-700 hover:underline underline-offset-4">
+                        Solutions
+                    </a>
+                    <a href="#" class="font-semibold text-gray-900 hover:text-gray-700 hover:underline underline-offset-4">
+                        Pricing
+                    </a>
+                </div>
+
+                <div>
+                    <button class="bg-gray-900 text-white rounded-full px-4 py-2 text-sm font-semibold">Sign In</button>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="w-full block md:flex px-6 py-24 gap-x-12">
+                <div class="w-full md:w-1/2">
+                    <h1 class="text-6xl font-bold">
+                        Ponzi schemes for <span class="underline underline-offset-4 bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 hover:animate-pulse">everyone</span>
+                    </h1>
+                    <p class="text-gray-600 pt-6">
+                        Millions of companies get conned into using our amazing service. It's not illegal because we're straight up telling you it's a scam.
+                    </p>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <img 
+                        class="h-auto w-auto pt-6 md:pt-0 hover:animate-spin"
+                        src="https://images.unsplash.com/photo-1579227114347-15d08fc37cae?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" 
+                        alt="handful of 100 dollar bills"
+                    />
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
